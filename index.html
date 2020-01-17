@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS ISSUE</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </head>
+    <body onload="fetchIssues()">
+
+        <div class="container">
+            <h1>JS ISSUE TRACKER <small>By Coding Abhishek Sharma</small></h1>
+            <div class="jumbotrom">
+                <h3>Add NEW ISSUE</h3>
+ <form id="issueinputform">
+                    <div class="form-group">
+                        <label for="issueDesinput">Description</label>
+                    <input type="text" class="form-control" id="issuedesinput" placeholder="Desccribe the issue ...">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="issueSeverityinput">Severity</label>
+                    <input type="text" class="form-control" id="issuedesinput" placeholder="Desccribe the issue ...">
+                    <select id="issueSeverityinput" class="form-control">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+
+                    <option value="high">High</option>
+
+
+                    </option>
+                    </select>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="issueAssignedToInput">Assigned to</label>
+                    <input type="text" class="form-control" id="issueAssignedtoinput" placeholder="enter the issue ...">
+
+                    </div>
+               <button type ="sunbmit" class="btn btn-primary">
+                   ADD
+               </button>
+                </form>
+            </div>
+        <div class="col-lg-12">
+            <div id="issuelist">
+                <div class="footer">
+                    <p>&copy; Coding By abhishek Sharma</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="https://chancejs.com/chance.min.js"></script>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="issuetracker.js">
+            </script>
+    </body>
+</html>
